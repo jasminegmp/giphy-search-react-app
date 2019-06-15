@@ -25,8 +25,9 @@ class App extends React.Component {
 	}
 
 	limitSubmit(limit){
-		this.setState({limit: limit});
-		console.log("LIMIT:", this.state.limit);
+		this.setState({limit: limit}, function () {
+             console.log("LIMIT:",this.state.limit);
+        });
 	}
 
 	render(){

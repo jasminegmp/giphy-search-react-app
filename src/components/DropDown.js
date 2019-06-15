@@ -7,14 +7,20 @@ class DropDown extends React.Component{
 		this.state = {
 			numItems: 5
 		}
-		this.onFormSubmit = this.onFormSubmit.bind(this);
+		this.handleChange = this.handleChange.bind(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
-	onFormSubmit(e){
+	handleSubmit(val){
+	    this.props.onClicking(val);
+	}
+
+	handleChange(e){
 		console.log("dropdown, numitems", e.target.value);
+		var value = e.target.value;
 		e.preventDefault();
 		this.setState({numItems: e.target.value});
-		this.props.onClicking(this.state.numItems);
+		this.handleSubmit(value);
 	}
 
 	render(){
@@ -22,7 +28,7 @@ class DropDown extends React.Component{
 			<div className = "ui segment">
 				<select name="items" multiple="" 
 					className="ui fluid dropdown" 
-					onChange = {this.onFormSubmit}
+					onChange = {this.handleChange}
 					value = {this.state.numItems}>
 					<option value="5">5</option>
 					<option value="10">10</option>
