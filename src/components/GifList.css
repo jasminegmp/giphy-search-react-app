@@ -1,9 +1,0 @@
-.gif-list{
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /*decides auto column numbers, 250px max to 1fr which means all columns need to be same size*/
-	grid-gap: 10px;
-}
-
-.gif-list img{
-	width: 250px;
-}
