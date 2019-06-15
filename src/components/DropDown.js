@@ -26,6 +26,7 @@ class DropDown extends React.Component{
 	render(){
 		return(
 			<div className = "ui segment">
+				<label># of Gifs</label>
 				<select name="items" multiple="" 
 					className="ui fluid dropdown" 
 					onChange = {this.handleChange}
