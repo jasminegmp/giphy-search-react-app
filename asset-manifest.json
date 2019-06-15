@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/giphy-search-react-app/static/css/main.53fbd9b0.chunk.css",
-    "main.js": "/giphy-search-react-app/static/js/main.0ef08380.chunk.js",
-    "main.js.map": "/giphy-search-react-app/static/js/main.0ef08380.chunk.js.map",
+    "main.js": "/giphy-search-react-app/static/js/main.8a60493f.chunk.js",
+    "main.js.map": "/giphy-search-react-app/static/js/main.8a60493f.chunk.js.map",
     "runtime~main.js": "/giphy-search-react-app/static/js/runtime~main.a3e2f082.js",
     "runtime~main.js.map": "/giphy-search-react-app/static/js/runtime~main.a3e2f082.js.map",
-    "static/js/2.badd22ab.chunk.js": "/giphy-search-react-app/static/js/2.badd22ab.chunk.js",
-    "static/js/2.badd22ab.chunk.js.map": "/giphy-search-react-app/static/js/2.badd22ab.chunk.js.map",
+    "static/js/2.ae60b9e4.chunk.js": "/giphy-search-react-app/static/js/2.ae60b9e4.chunk.js",
+    "static/js/2.ae60b9e4.chunk.js.map": "/giphy-search-react-app/static/js/2.ae60b9e4.chunk.js.map",
     "index.html": "/giphy-search-react-app/index.html",
-    "precache-manifest.f29010748817e18e8a49e47c484cb401.js": "/giphy-search-react-app/precache-manifest.f29010748817e18e8a49e47c484cb401.js",
+    "precache-manifest.4690247f46438a64ac2a67d6896fd477.js": "/giphy-search-react-app/precache-manifest.4690247f46438a64ac2a67d6896fd477.js",
     "service-worker.js": "/giphy-search-react-app/service-worker.js",
     "static/css/main.53fbd9b0.chunk.css.map": "/giphy-search-react-app/static/css/main.53fbd9b0.chunk.css.map"
   }
