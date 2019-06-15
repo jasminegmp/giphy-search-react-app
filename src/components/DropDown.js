@@ -1,21 +1,19 @@
 import React from 'react';
 
-class SearchBar extends React.Component{
+class DropDown extends React.Component{
 
 	constructor(props){
 		super(props);
 		this.state = {
-			searchTerm: ''
+			numItems: 10
 		}
 		this.onFormSubmit = this.onFormSubmit.bind(this);
 	}
 
 	onFormSubmit(e){
 		e.preventDefault();
-		this.props.onSubmitting(this.state.searchTerm);
+		this.props.onClicking(this.state.numItems);
 	}
-
-
 
 	render(){
 		return(
@@ -24,10 +22,9 @@ class SearchBar extends React.Component{
 					<div className ="ui fluid icon input">
 						<input 
 							type="text" 
-							placeholder="Search GIPHY..." 
-							onChange = {(e) => this.setState({searchTerm: e.target.value})}
-							value = {this.state.searchTerm}
-
+							placeholder="Num of Items.=" 
+							onChange = {(e) => this.setState({numItems: e.target.value})}
+							value = {this.state.numItems}
 							/>
 					</div>
 				</form>
@@ -36,4 +33,4 @@ class SearchBar extends React.Component{
 	}
 }
 
-export default SearchBar;
+export default DropDown;
