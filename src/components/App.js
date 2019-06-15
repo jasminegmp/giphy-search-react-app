@@ -10,7 +10,7 @@ class App extends React.Component {
 		super(props);
 		this.state = {
 			gifs: [],
-			limit: 0
+			limit: 5
 		};
 		this.onSearchSubmit = this.onSearchSubmit.bind(this);
 		this.limitSubmit = this.limitSubmit.bind(this);
@@ -20,9 +20,7 @@ class App extends React.Component {
 
 		console.log("onSearchSubmit:", this.state.limit);
 		const link = `https://api.giphy.com/v1/gifs/search?q=${term}&limit=${this.state.limit}&api_key=${process.env.REACT_APP_GIPHY_KEY}`;
-		console.log(link);
 		const response = await axios.get(link);
-		console.log(response);
 		this.setState({gifs: response.data.data});
 	}
 
