@@ -29,6 +29,7 @@ class SearchBar extends React.Component{
 							value = {this.state.searchTerm}
 
 							/>
+							<i class="inverted circular search link icon" onClick = {this.onFormSubmit}></i>
 					</div>
 				</form>
 			</div>
