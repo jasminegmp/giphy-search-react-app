@@ -19,7 +19,7 @@ class SearchBar extends React.Component{
 
 	render(){
 		return(
-			<div className = "ui segment">
+			<div>
 				<form onSubmit = {this.onFormSubmit}>
 					<div className ="ui fluid icon input">
 						<input 
@@ -29,7 +29,7 @@ class SearchBar extends React.Component{
 							value = {this.state.searchTerm}
 
 							/>
-							<i class="inverted circular search link icon" onClick = {this.onFormSubmit}></i>
+							<i className ="inverted circular search link icon" onClick = {this.onFormSubmit}></i>
 					</div>
 				</form>
 			</div>

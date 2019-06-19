@@ -33,9 +33,12 @@ class App extends React.Component {
 	render(){
 		return (
 			<div className="ui container" style ={{marginTop: '20px'}}>
-				<DropDown onClicking = {this.limitSubmit}/>
-				<SearchBar onSubmitting = {this.onSearchSubmit}/>
+				<div className = "ui segment">
+					<DropDown onClicking = {this.limitSubmit}/>
+					<SearchBar onSubmitting = {this.onSearchSubmit}/>
+				</div>
 				<GifList gifs = {this.state.gifs}/>
+				
 			</div>
 		);
 	}
