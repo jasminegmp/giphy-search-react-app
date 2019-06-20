@@ -1,0 +1,17 @@
+.gif-detail{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 20px;
+
+}
+
+.gif-large img{
+	height: 250px;
+	margin: 10px;
+}
+
+.gif-large button{
+	margin: 10px;
+}

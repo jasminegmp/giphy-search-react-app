@@ -1,6 +1,7 @@
 import React from 'react'
 import GifList from './GifList'
 import GifCard from './GifCard'
+import './GifDetailsPage.css'
 
 class GifDetailsPage extends React.Component {
 
@@ -16,13 +17,16 @@ class GifDetailsPage extends React.Component {
     //console.log("here", this.props.location, this.props)
     //console.log(this.props.location.id)
     return (
-    	<div>
-	    	<h1>Users</h1>
-	    	<img src = {this.props.location.id}/>
-	    	<button onClick={this.goBack}>Go Back</button>
+    	<div className = "gif-detail">
+	    	<div className = "gif-large">
+		    	<img src = {this.props.location.id}/>
+		    </div>
+		    <div>
+		    	<button className="ui button" onClick={this.goBack}>Go Back</button>
+	    	</div>
     	</div>
     )
-  }
+  } 
 }
 
 export default GifDetailsPage;
