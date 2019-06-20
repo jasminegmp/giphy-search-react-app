@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 
 class GifCard extends React.Component{
 
@@ -20,6 +21,8 @@ class GifCard extends React.Component{
 		const height = this.gifRef.current.clientHeight; // step 2
 		const spans = Math.ceil(height / 10); // 	10 from grid-auto-rows
 		this.setState({spans});
+		this.setState({gifId: this.gifRef.current.id});
+		console.log(this.gifRef.current);
 	}
 
 
@@ -28,9 +31,9 @@ class GifCard extends React.Component{
 		const {url} = this.props.gif;
 		return(
 			<div style = {{gridRowEnd: `span ${this.state.spans}`}}>
-				<a href={`/gif/${this.props.gif.id}`}>
+				<Link to ={{pathname: `${this.props.gif.id}`, id: this.props.gif.images.fixed_width_small.url}}>
 					<img ref = {this.gifRef} src = {this.props.gif.images.fixed_width_small.url}/>
-				</a>
+				</Link>
 			</div>
 		)
 	}

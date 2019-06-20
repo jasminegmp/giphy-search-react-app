@@ -43,7 +43,7 @@ class App extends React.Component {
 					<Switch>
 					<Route exact path='/' render={(props) => (<GifList gifs={this.state.gifs} {...props} />)} />
 
-					<Route path="/gif/:id" render={(props) => (<GifDetailsPage gifs={this.state.gifs} {...props} />)} />
+					<Route path="/:id" render={(props) => (<GifDetailsPage gifs={this.state.gifs} {...props} />)} />
 					</Switch>
 				</div>
 			</Router>
