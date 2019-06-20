@@ -13,8 +13,8 @@ class GifDetailsPage extends React.Component {
 		this.props.history.goBack();
 	}
   render() {
-    console.log("here", this.props.location, this.props)
-    console.log(this.props.location.id)
+    //console.log("here", this.props.location, this.props)
+    //console.log(this.props.location.id)
     return (
     	<div>
 	    	<h1>Users</h1>
