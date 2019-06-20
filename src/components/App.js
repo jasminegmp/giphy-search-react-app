@@ -41,9 +41,9 @@ class App extends React.Component {
 						<SearchBar onSubmitting = {this.onSearchSubmit}/>
 					</div>
 					<Switch>
-					<Route exact path='/' render={(props) => (<GifList gifs={this.state.gifs} {...props} />)} />
+					<Route exact path='https://jasminegmp.github.io/giphy-search-react-app/' render={(props) => (<GifList gifs={this.state.gifs} {...props} />)} />
 
-					<Route path="/:id" render={(props) => (<GifDetailsPage gifs={this.state.gifs} {...props} />)} />
+					<Route path="https://jasminegmp.github.io/giphy-search-react-app/:id" render={(props) => (<GifDetailsPage gifs={this.state.gifs} {...props} />)} />
 					</Switch>
 				</div>
 			</Router>
