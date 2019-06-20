@@ -31,7 +31,7 @@ class GifCard extends React.Component{
 		const {url} = this.props.gif;
 		return(
 			<div style = {{gridRowEnd: `span ${this.state.spans}`}}>
-				<Link to ={{pathname: `${this.props.gif.id}`, id: this.props.gif.images.fixed_width_small.url}}>
+				<Link to ={{pathname: `${this.props.gif.id}`, id: this.props.gif.images.fixed_width_small.url, bitly_gif_url: this.props.gif.bitly_gif_url}}>
 					<img ref = {this.gifRef} src = {this.props.gif.images.fixed_width_small.url}/>
 				</Link>
 			</div>
